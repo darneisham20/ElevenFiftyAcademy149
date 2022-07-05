@@ -1,0 +1,48 @@
+.wrapper {
+    margin: 5px;
+}
+
+h1 {
+    text-align: center;
+}
+
+body {
+    background-color: lightgray;
+}
+
+.background-one {
+    background-color: blue;
+    padding: 7px;
+}
+
+/* We're using combinators again */
+/* This means any p tag inside of an element with the background1 class will have white text */
+.background-one p {
+    color: white;
+}
+
+.background-two {
+    /* This allows us to set an image into the background */
+    background-image: url(../assets/upfeathers.png);
+
+    /* When you only give a padding/margin two values, it usees the first for top/bottom and the second for the right/left */
+    padding: .5em 1em;
+}
+
+/* We can also use a gradient for our own backgrounds in CSS */
+.rainbow-container {
+    background: linear-gradient(
+        90deg,
+        rgba(225, 0, 0, 1) 0%,
+        rgba(225, 154, 0, 1) 10%,
+        rgba(208, 222, 33, 1) 20%,
+        rgba(79, 220, 74, 1) 30%,
+        rgba(63, 218, 74, 1) 40%,
+        rgba(47, 201, 226, 1) 50%,
+        rgba(28, 127, 238, 1) 60%,
+        rgba(95, 21, 242, 1) 70%,
+        rgba(186, 12, 248, 1) 80%,
+        rgba(251, 7, 217, 1) 90%,
+        rgba(255, 0, 0, 1) 100%
+    );
+}

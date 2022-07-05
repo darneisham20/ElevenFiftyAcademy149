@@ -1,0 +1,30 @@
+.wrapper {
+    margin: 5px;
+}
+
+.nav {
+    /* Fixed is relative to the viewport. It always stays in the same palce even if you scroll the page */
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    background-color: lightgray;
+    border: 3px solid navy;
+}
+
+.lotsoftext {
+    /* vh is a unit that represents 1/100th of the view height */
+    /* This means 150vh is bascically 150% of the window height */
+    height: 150vw;
+    width: 75%;
+    background-color: lightseagreen;
+}
+
+.positioning {
+    width: 75%;
+    background-color: lightgray;
+}
+
+.positioning h1 {
+    text-align: center;
+}
