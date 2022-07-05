@@ -1,0 +1,67 @@
+.title {
+    /* Aligns all content within to the center of the element's width */
+    text-align: center;
+}
+
+.container {
+    border: 2px solid blue;
+    /* Here we have the margin where we set each side */
+    margin-top: 50px;
+    margin-right: 250px;
+    margin-bottom: 200px;
+    margin-left: 200px;
+
+    /* We can also just declare them all in one line, in the same order
+    Our margin could be instead:border: */
+    /* margin: 50px 250px 200px 200px */
+
+    /* Here we can see this done with the padding */
+    /* padding: top right bottom left; */
+    padding: 20px 20px 20px 40px
+}
+
+p {
+    /* We can also modify the other parts of the box model, such as height and width */
+    height: 40px;
+    background-color: blue;
+    color: white;
+
+    /* This syntax is also shorthand and replaces the following: */
+    /* 
+        border-width: 5px;
+        border-style: solid;
+        border-color: pink;
+    */
+    border: 5px solid pink
+}
+
+/* We can apply the same styling to different selectors by separating them with a comma */
+#margin-experiment-1, #margin-experiment-2 {
+    /* If all values of a margin are the same, you can apply that one value to the entire margin */
+    /* 0 is a consistent value so you do not need to assign it a unit */
+    margin: 0;
+}
+
+/* Explain what is happening here. */
+.margin-experiment-3 {
+    margin: 5px 10px 20px 0;
+    padding: 10px;
+}
+
+.padded-container {
+    border: 2px solid red;
+    margin: 50px;
+    padding: 20px 20px 20px 40px
+}
+
+#padding-experiment-1 {
+    border: 2px solid yellow;
+    margin: 50px;
+    padding: 20px;
+}
+
+#padding-experiment-2 {
+    border: 1px solid pink;
+    margin: 10px;
+    padding: 20px;
+}

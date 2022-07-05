@@ -4,9 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./02-ids.css"
+    <title>CSS ID's</title>
 </head>
 <body>
-    
+    <h1>CSS IDs</h1>
+    <p>An ID is a UNIQUE identifier</p>
+    <div>
+        <h3>ID Notes</h3>
+        <li>
+            <li> In CSS an id starts with an octothorpe (pont, hashtag, number, etc.) -#</li>
+            <li>Exampe uses for IDs: Targeting a specific header or an about section</li>
+            <li>Each ID should only be used once per page - they are UNIQUE!<
+
+            <br />
+
+            <em>This is important with Javascript later on as well.</em>
+            </li>
+        </ul>
+    </div>
+    <div>
+        <h1>IDs versus Classes</h1>
+        <h2>IDs</h2>
+        <p id="number-one">This id will be linked in the CSS page by a #.</p>
+        <p id="number-one number-two">You can't have two ids on an element. If you do, neither will be applied</p>
+
+        <h2>Classes</h2>
+        <p class="first-class">Elements can have any number of classes.</p>
+        <p class="first-class secont-class">For example, this element has two classes.</p>
+
+        <p id="number-one" class="first-class">You CAN use an id twice, but you shouldn't</p>
+    </div>
 </body>
 </html>
