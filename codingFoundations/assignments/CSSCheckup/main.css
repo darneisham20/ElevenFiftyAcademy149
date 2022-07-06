@@ -1,0 +1,66 @@
+body {
+    background-color: lavenderblush;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    height: 100vw;
+}
+
+header {
+    background-image: url(./assets/sprinkles.jpg);
+    background-size: 300px;
+    text-align: right;
+    padding: .75rem 0;
+    border-bottom: solid 1px white;
+    box-shadow: 
+    0 4px 8px 0 rgba(92, 91, 91, 0.2),
+    0 6px 20px 0 rgba(217, 217, 217, 0.19);
+    position: fixed;
+    top: 0;
+    left: -1rem;
+    width: 100vw;
+}
+
+header a {
+    color: white;
+    background-color: rgb(241, 183, 203);
+    border: solid 1px rgb(216, 216, 216);
+    border-radius: 3px;
+    padding: .25rem .5rem;
+    margin-right: .5rem;
+    line-height: 1.5rem;
+    text-decoration: none;
+}
+
+header a:hover {
+    background-color: rgb(180, 121, 141);
+    cursor: pointer;
+}
+
+h1 {
+    text-align: center;
+    color: cornflowerblue;
+    text-shadow: 2px 2px rgb(233, 233, 233);
+    margin-top: 75px;
+}
+
+.border-style {
+    border-color: cornflowerblue;
+    margin: 2px;
+    border-style: none none dashed none;
+    margin-top: 50px;
+    margin-right: 250px;
+    margin-bottom: 0;
+    margin-left: 200px;
+}
+
+#number-one {
+    color: cornflowerblue;
+    background-color: white;
+    font-size: 16px;
+    margin-top: 50px;
+    margin-right: 250px;
+    margin-bottom: 200px;
+    margin-left: 200px;
+    padding: 20px 20px 20px 40px;
+}
