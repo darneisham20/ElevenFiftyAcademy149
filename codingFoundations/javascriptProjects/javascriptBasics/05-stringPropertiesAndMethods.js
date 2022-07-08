@@ -38,3 +38,16 @@ console.log(home.includes("texas")); //OUTPUT: false because "texas" DOES NOT ex
 let home2 = "My home is Texas part 2";
 console.log(home2.includes(2)); //OUTPUT: true because the includes method is NOT comparing Data Types.
 // NOTE: the includes method is NOT exclusive to just strings. 
+
+// CHALLENGE
+/*
+    USE GOOGLE! Open-book challeng. Research and use the split method to get an array of separate words back from the sentence that is provided.
+*/
+
+let sentence = "This sentence is going to be split into individual parts!";
+let words = sentence.split(" "); //OUTPUT: Splits into seperate words
+console.log(words);
+
+// The split method splits a string into substrings.
+// Returns a new array. 
+// The split method does NOT change the original string.

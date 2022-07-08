@@ -1,4 +1,4 @@
-// Javascript is a programming interpreted language that was developed in 1995 by Brendan Eich of Netscape.We are currently on version 7 of JS.
+// Javascript is a programming interpreted language that was developed in 1995 by Brendan Eich of Netscape. We are currently on version 7 of JS.
 
 // Javascript is the action/verb and allows us to do things with our projects.
 
