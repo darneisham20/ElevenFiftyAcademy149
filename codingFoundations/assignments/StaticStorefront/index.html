@@ -4,75 +4,134 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./main.css">
-    <title>Bookstore</title>
+    <title>The Book Exchange</title>
 </head>
 <body>
     <header>
-        <!-- My Account / Wishlist / Cart -->
-        <nav>
-            <ul>
-                <li><a href="#">My Account</a></li>
-                <li><a href="#">Wishlist</a></li>
-                <li><a href="#">Cart</a></li>
-            </ul>
-        </nav>
-        <!-- Bookstore Name / Icon / Searh Bar -->
-        <nav>
-            <h1>Bookstore Name</h1>
-            <ul>
-                <li><a href="#"><img src="INSERT PIC" alt="Store Icon" /></a></li>
-                <li><input type="search" id="search" placeholder="Search"></li>
-            </ul>
-        </nav>
-        <!-- Navigation Menu -->
-        <nav>
-            <ul>
-                <li><a href="#">Best Sellers</a></li>
-                <li><a href="#">New Releases</a></li>
-                <li><a href="#">Coming Soon</a></li>
-                <li><a href="#">Fiction</a></li>
-                <li><a href="#">Nonfiction</a></li>
-                <li><a href="#">Teen & YA</a></li>
-                <li><a href="#">Kids</a></li>
-                <li><a href="#">eBooks</a></li>
-                <li><a href="#">Audiobooks</a></li>
-            </ul>
-        </nav>
+        <div class="contentWrapper">
+            <!-- Header, Utility Links, Search Bar -->
+            <nav id="utilityMenu">
+                <h1>The Book Exchange</h1>
+                <ul>
+                    <li><a href="#">My Account</a></li>
+                    <li><a href="#">Wishlist</a></li>
+                    <li><a href="#">Cart</a></li>
+                    <br/>
+                    <li><input type="search" id="search" placeholder="Search"></li>
+                </ul>
+            </nav>
+
+            <!-- Icon  -->
+            <img id="bookStoreLogo" src="./assets/be-icon.png" alt="The Book Exchange Logo" width="170" height="170"/>
+            
+
+            <!-- Navigation Menu -->
+            <nav id="navMenu">
+                <ul>
+                    <li><a href="#">Best Sellers</a></li>
+                    <li><a href="#">New Releases</a></li>
+                    <li><a href="#">Coming Soon</a></li>
+                    <li><a href="#">Fiction</a></li>
+                    <li><a href="#">Nonfiction</a></li>
+                    <li><a href="#">Teen & YA</a></li>
+                    <li><a href="#">Kids</a></li>
+                    <li><a href="#">eBooks</a></li>
+                    <li><a href="#">Audiobooks</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <!-- J.K. Rowling book Signing -->
+    <!-- J.K. Rowling Book Signing -->
     <section id="bookSign">
+        <img src="./assets/jkr-headshot.webp" alt="J.K. Rowling" width="325" height="425">
         <h1>J.K. Rowling Book Signing!</h1>
+        <br />
         <h3>August 20th, 2022</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque nemo neque quis? Nostrum cupiditate eveniet debitis, rerum cum id labore molestiae aspernatur odit distinctio ut dolorem quis atque culpa officiis?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi in ex pariatur optio, harum inventore repudiandae maxime reprehenderit fugiat voluptas rerum ut non autem, totam sint quia deserunt delectus officia! Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe earum, dolorum sunt blanditiis quod sed, esse voluptates, ducimus quidem animi voluptate explicabo cum nihil fugiat. Exercitationem recusandae libero dolores quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim aliquam delectus cum alias fugiat? Quo sint, nesciunt ex eligendi fugiat repellat optio. Omnis aspernatur ullam labore iste pariatur possimus saepe.</p>
-        <img src="INSERT PIC" alt="J.K. Rowling">
+        <br />
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque nemo neque quis? Nostrum cupiditate eveniet debitis, rerum cum id labore molestiae aspernatur odit distinctio ut dolorem quis atque culpa officiis?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi in ex pariatur optio, harum inventore repudiandae maxime reprehenderit fugiat voluptas rerum ut non autem, totam sint quia deserunt delectus officia! Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe earum, dolorum sunt blanditiis quod sed, esse voluptates, ducimus quidem animi voluptate explicabo cum nihil fugiat. Exercitationem recusandae libero dolores quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim aliquam delectus cum alias fugiat? Quo sint, nesciunt ex eligendi fugiat repellat optio. Omnis aspernatur ullam labore iste pariatur possimus saepe. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo hic assumenda explicabo eligendi, saepe soluta itaque magnam ad aspernatur commodi molestiae, distinctio, dolore labore debitis delectus adipisci! Sapiente, ea fugit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia sint voluptate iste, earum, aspernatur perspiciatis maiores quidem placeat, perferendis minima exercitationem illum dolores unde! Asperiores ex sint magnam temporibus quia?
+        <br /> 
+        <br />
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque nemo neque quis? Nostrum cupiditate eveniet debitis, rerum cum id labore molestiae aspernatur odit distinctio ut dolorem quis atque culpa officiis?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi in ex pariatur optio, harum inventore repudiandae maxime reprehenderit fugiat voluptas rerum ut non autem, totam sint quia deserunt delectus officia! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo consectetur sit sapiente culpa, natus aliquid animi ab voluptates tempore amet dignissimos qui dicta consequuntur eum facere perferendis eaque praesentium! Natus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat assumenda natus culpa facilis maiores cupiditate provident quis aspernatur cumque quas? Voluptatibus, sint sed. Et fugit tempora amet temporibus asperiores non. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea alias ipsa in sequi harum velit sunt tempora architecto, inventore facere dolores iste id vel aliquam rerum, incidunt, veritatis commodi sit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, laudantium nihil culpa temporibus quia, provident aperiam libero optio eos dolore quos ad nobis harum accusamus ducimus perferendis quae ullam nesciunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quaerat iste minima ducimus at error placeat unde, deleniti expedita tenetur saepe adipisci accusamus assumenda obcaecati veniam cum itaque, culpa perspiciatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, nihil autem! Debitis delectus voluptatum illum qui. Nostrum quisquam sint, aperiam molestias reiciendis eaque ab vero illum optio quae dolorem? Consequatur.
+        </p>
     </section>
 
     <!-- Trending Summer Reads Section -->
     <section id="summerRead">
+        <hr />
+        <br />
         <h3>Trending Summer Reads</h3>
         <p>See All</p>
+        <br />
         <ul>
-            <li><img src="INSERT PIC" alt="Book1" class="sbook"></li>
-            <li><img src="INSERT PIC" alt="Book2" class="sbook"></li>
-            <li><img src="INSERT PIC" alt="Book3" class="sbook"></li>
-            <li><img src="INSERT PIC" alt="Book4" class="sbook"></li>
-            <li><img src="INSERT PIC" alt="Book5" class="sbook"></li>
-            <li><img src="INSERT PIC" alt="Book6" class="sbook"></li>
-            <li><img src="INSERT PIC" alt="Book7" class="sbook"></li>
+            <li><img src="./assets/the-love-hypothesis.jpg" alt="The Love Hypothesis" class="sbook" width="200" height="300"></li>
+            <li><img src="./assets/beautiful-world-where-are-you.jpg" alt="Beautiful World Where Are You" class="sbook" width="200" height="300"></li>
+            <li><img src="./assets/mexican-gothic.jpg" alt="Mexican Gothic" class="sbook" width="200" height="300"></li>
+            <li><img src="./assets/billy-summers.jpg" alt="Billy Summers" class="sbook" width="200" height="300"></li>
+            <li><img src="./assets/the-rose-code.jpg" alt="The Rose Code" class="sbook" width="200" height="300"></li>
+            <li><img src="./assets/it-happened-one-summer.jpg" alt="It Happened One Summer" class="sbook" width="200" height="300"></li>
+            <li><img src="./assets/the-final-girl-support-group.jpg" alt="The Final Girl Support Group" class="sbook" width="200" height="300"></li>
         </ul>
+        <br />
+        <hr />
     </section>
 
     <!-- Bookseller Recommendations -->
     <section id="bookRec">
         <h3>Our Bookseller Recommendations</h3>
-        
+        <div class="parentPanel">
+            <div class="panel1">
+                <img src="./assets/sarah-j-maas-house-of-earth-and-blood.jpg" alt="House of Earth and Blood" class="bestBook" width="300" height="410">
+                <h3>House of Earth and Blood</h3>
+                <p>Sarah J. Maas</p>
+            </div>
+            <div class="aboutBook">
+                <p>Bryce Quinlan had the perfect life—working hard all day and partying all night—until a demon murdered her closest friends, leaving her bereft, wounded, and alone. When the accused is behind bars but the crimes start up again, Bryce finds herself at the heart of the investigation. She’ll do whatever it takes to avenge their deaths.
+                <br />
+                <br />
+                Hunt Athalar is a notorious Fallen angel, now enslaved to the Archangels he once attempted to overthrow. His brutal skills and incredible strength have been set to one purpose—to assassinate his boss’s enemies, no questions asked. But with a demon wreaking havoc in the city, he’s offered an irresistible deal: help Bryce find the murderer, and his freedom will be within reach...</p>
+            </div>
+            <div class="panel2">
+                <img src="./assets/lore-olympus.jpg" alt="Lore Olympus" class="bestBook" width="200" height="300">
+                <h4>Lore Olympus: Volume One</h4>
+                <p>Rachel Smythe</p>
+            </div>
+            <div class="panel3">
+                <img src="./assets/the-anthropocene-reviewed.jpg" alt="The Anthropocene Reviewed" class="bestBook" width="200" height="300">
+                <h4>The Anthropocene Reviewed</h4>
+                <p>John Green</p>
+            </div>
+            <div class="panel4">
+                <img src="./assets/rule-of-wolves.png" alt="Rule of Wolves" class="bestBook" width="200" height="300">
+                <h4>Rule of Wolves</h4>
+                <p>Leigh Bardugo</p>
+            </div>
+        </div>
     </section>
     
     <!-- Legal items, navigational items -->
     <footer>
+        <ul id="menuFooter">
+            <li><a href="#">About</a></li>
+            <li id="Careers"><a href="#">Careers</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+
+        <br />
+        <br />
+        
         <span>&copy;2022 "Book Store Name" | All rights reserved | Website by Darneisha Miller Designs</span>
+        
+        <div id="socialLinks">
+            <a href="#"><img src="./assets/twitter-icon.png" alt="Twitter" class="socialIcon" width="35" height="35" /></a>
+            <a href="#"><img src="./assets/ig-icon.png" alt="Instagram" class="socialIcon" width="35" height="35" /></a>
+            <a href="#"><img src="./assets/fb-icon.png" alt="Facebook" class="socialIcon" width="35" height="35" /></a>
+        </div>
     </footer>
 </body>
 </html>

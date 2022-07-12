@@ -1,0 +1,342 @@
+/* Common Headers */
+
+body {
+    font-size: 67.5%;
+    font-family: 'Inter', sans-serif, 'Times New Roman', Times, serif, Arial, Helvetica, sans-serif;
+    background-color: #F7F7F7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0%;
+    margin: 0;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+}
+
+h1 {
+    color: rgb(54, 58, 61);
+    font-size: 2.0em;
+    margin: 0.5em 0 0.5em 0;
+    padding: 0;
+}
+
+h2 {
+    color: rgb(54, 58, 61);
+    font-size: 1.7em;
+    margin: 0.5em 0 0.35em 0;
+    padding: 0;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.4em;
+    color: rgb(54, 58, 61);
+    padding: 0px;
+    margin: 0px 0.5em 0.75 0px;
+}
+
+ol {
+    font-size: 1.2em;
+    margin: 0 0 0 1.0em;
+    padding: 0 0 0 1.0em;
+}
+
+ol li {
+    margin: 0;
+    padding: 0 0 0.2em;
+}
+
+.contentWrapper {
+    margin: 0 auto;
+    padding: 0 1.0em;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+/* Header */
+header {
+    padding: 1em 0 0.5em;
+    margin: 0 0 2.0em 0;
+    background: #172D39;
+}
+
+header h1 {
+    font-family: 'Inter', sans-serif, 'Times New Roman', Times, serif, Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 2.5em;
+    letter-spacing: 0.025em;
+    margin: 0;
+    padding-left: 1%;
+    color: white;
+    width: 500px;
+    float: left;
+}
+
+/* Book Store Logo */
+#bookStoreLogo {
+    display: flex;
+    margin: 0 auto 1.5em auto;
+}
+
+/* Utility Bar */
+nav#utilityMenu {
+    font-size: 1.3em;
+    letter-spacing: 0.04em;
+    margin: 0;
+    padding: 0;
+}
+nav#utilityMenu ul {
+    text-align: right;
+    margin: 0;
+    padding: 0.5em;
+    list-style: none;
+}
+
+/* Search Bar */
+nav#utilityMenu ul li input#search {
+    vertical-align: middle;
+    margin: 1.5em 0 0 0;
+    width: 222px;
+}
+
+/* Nav Bar */
+nav#navMenu {
+    font-size: 2em;
+    letter-spacing: 0.04em;
+    padding: 0em 1em 0em 1em;
+    margin: .5em 0;
+}
+
+nav#navMenu  ul {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0;
+}
+
+nav li a, nav li a:visited {
+    text-decoration: none;
+    color: white;
+    padding: 0.3em 0.6em;
+}
+
+nav li a:hover {
+    color: white;
+    background-color: pink;
+    border-radius: 12px;
+}
+
+/* J.K. Rowling Book Signing */
+
+section#bookSign {
+    background-color: rgb(138, 138, 138);
+    height: auto;
+    margin: 2em 0 1em 0;
+    padding: 2em 2em 2em 2em;
+    display: inline-flexbox;
+}
+
+section#bookSign h1 {
+    font-family: 'Inter', sans-serif, 'Times New Roman', Times, serif, Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 2.5em;
+    letter-spacing: 0.025em;
+    margin: 0 0 0 25px;;
+    color: white;
+    width: 50%;
+}
+
+section#bookSign h3 {
+    font-family: 'Inter', sans-serif, 'Times New Roman', Times, serif, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 1.5em;
+    letter-spacing: 0.025em;
+    margin: 0 0 0 25px;
+    color: white;
+    width: 50%;
+}
+
+section#bookSign p {
+    font-family: 'Inter', sans-serif, 'Times New Roman', Times, serif, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.025em;
+    margin: 0 0 0 25px;;
+    color: white;
+    width: 73%;
+}
+
+section#bookSign img {
+    float: right;
+    padding: 0;
+    margin: 0 25px
+}
+
+/* Trending Summer Reads Section */
+
+section#summerRead {
+    margin: 1em 0 1em 0;
+    padding: 2em 2em 2em 2em;
+    display: inline-block;
+}
+
+section#summerRead h3 {
+    font-family: 'Inter', sans-serif, 'Times New Roman', Times, serif, Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 1.5em;
+    letter-spacing: 0.025em;
+    margin: 0;
+    color: rgb(54, 58, 61);
+}
+
+section#summerRead p {
+    font-family: 'Inter', sans-serif, 'Times New Roman', Times, serif, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    font-style: italic;
+    letter-spacing: 0.025em;
+    margin: 0;
+    color: rgb(54, 58, 61);
+}
+
+section#summerRead ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+section#summerRead ul li {
+    display: inline;
+    margin: 10px 0;
+}
+
+/* Bookseller Recommendations */
+section#bookRec {
+    background-color: rgb(138, 138, 138);
+    margin: 1em 0 2em 0;
+    padding: 2em 2em 2em 2em;
+    display: inline-block;
+}
+
+section#bookRec h3 {
+    font-family: 'Inter', sans-serif, 'Times New Roman', Times, serif, Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 1.5em;
+    letter-spacing: 0.025em;
+    margin: 0;
+    color: white;
+}
+
+section#bookRec h4 {
+    font-family: 'Inter', sans-serif, 'Times New Roman', Times, serif, Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.025em;
+    margin: 0;
+    color: white;
+}
+
+section#bookRec p {
+    font-family: 'Inter', sans-serif, 'Times New Roman', Times, serif, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.025em;
+    margin: 0 0 0 25px;;
+    color: white;
+    width: 73%;
+}
+
+.parentPanel {
+    margin: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.panel1 {
+    display: inline-block;
+    padding: 0 1rem 0 1rem;
+    text-align: center;
+}
+
+.aboutBook {
+    display: inline-block;
+    padding: 0 1rem 0 1rem;
+    width: 25%;
+    text-align: center;
+}
+
+.panel2 {
+    display: inline-block;
+    padding: 0 1rem 0 1rem;
+    text-align: center;
+}
+
+.panel3 {
+    display: inline-block;
+    padding: 0 1rem 0 1rem;
+    text-align: center;
+}
+
+.panel4 {
+    display: inline-block;
+    padding: 0 1rem 0 1rem;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: #172D39;
+    height: 70px;
+    font-size: 1.3em;
+    color: white;
+    text-align: left;
+    padding: 1.5em 2.0em;
+}
+
+footer ul#menuFooter {
+    display: inline-block;
+    list-style: none;
+    margin: 0 0 0 0.6em;
+    padding: 0;
+}
+
+footer ul#menuFooter li {
+    display: inline-block;
+    padding: 0 0.7em 0 0;
+    margin: 0;
+}
+footer ul#menuFooter li {
+    content: "| ";
+    padding-right: 0.7em;
+}
+
+footer a, footer a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: pink;
+    text-decoration: underline;
+}
+
+footer #socialLinks {
+    position: relative;
+    float: right;
+    margin-top: 10px;
+    padding-top: 5px;
+}
