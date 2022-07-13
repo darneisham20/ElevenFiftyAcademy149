@@ -64,7 +64,7 @@ ol li {
 /* Header */
 header {
     padding: 1em 0 0.5em;
-    margin: 0 0 2.0em 0;
+    margin: 0;
     background: #172D39;
 }
 
@@ -134,15 +134,16 @@ nav li a, nav li a:visited {
 }
 
 nav li a:hover {
+    font-weight: 700;
     color: white;
-    background-color: pink;
-    border-radius: 12px;
-}
+    text-decoration: underline;
+} 
+
 
 /* J.K. Rowling Book Signing */
 
 section#bookSign {
-    background-color: rgb(138, 138, 138);
+    background-color: #a8a8a8;
     height: auto;
     margin: 2em 0 1em 0;
     padding: 2em 2em 2em 2em;
@@ -194,39 +195,51 @@ section#summerRead {
 }
 
 section#summerRead h3 {
+    display: inline-block;
     font-family: 'Inter', sans-serif, 'Times New Roman', Times, serif, Arial, Helvetica, sans-serif;
     font-weight: 700;
     font-size: 1.5em;
     letter-spacing: 0.025em;
-    margin: 0;
+    margin: 0 0 20px 0;
     color: rgb(54, 58, 61);
 }
 
 section#summerRead p {
+    display: inline;
+    float: right;
     font-family: 'Inter', sans-serif, 'Times New Roman', Times, serif, Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-size: 14px;
     font-style: italic;
     letter-spacing: 0.025em;
-    margin: 0;
+    margin: 0 0 20px 0;
     color: rgb(54, 58, 61);
 }
 
-section#summerRead ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    text-align: center;
+section#summerRead p a, p a:visited {
+    color: rgb(54, 58, 61);
 }
 
-section#summerRead ul li {
-    display: inline;
-    margin: 10px 0;
+section#summerRead p a:hover {
+    font-weight: 700;
+    color: rgb(54, 58, 61);
+    text-decoration: underline;
+}
+
+.scroll-images {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.child {
+    padding: 20px 0 20px 0;
+    margin: 1px 30px;
+    overflow: hidden;
 }
 
 /* Bookseller Recommendations */
 section#bookRec {
-    background-color: rgb(138, 138, 138);
+    background-color: #a8a8a8;
     margin: 1em 0 2em 0;
     padding: 2em 2em 2em 2em;
     display: inline-block;
@@ -272,29 +285,69 @@ section#bookRec p {
     text-align: center;
 }
 
+.panel1 h4 {
+    padding: 12px;
+}
+
+.panel1 p {
+    text-decoration: underline;
+}
+
 .aboutBook {
     display: inline-block;
-    padding: 0 1rem 0 1rem;
+    padding: 0 0.5rem 0 0.5rem;
     width: 25%;
+    vertical-align: top;
     text-align: center;
+}
+
+.aboutBook p {
+    text-decoration: none;
 }
 
 .panel2 {
     display: inline-block;
     padding: 0 1rem 0 1rem;
+    vertical-align: top;
     text-align: center;
+}
+
+.panel2 h4 {
+    padding: 10px;
+}
+
+.panel2 p {
+    text-decoration: underline;
 }
 
 .panel3 {
     display: inline-block;
     padding: 0 1rem 0 1rem;
+    vertical-align: top;
     text-align: center;
+}
+
+.panel3 h4 {
+    padding: 10px;
+}
+
+.panel3 p {
+    text-decoration: underline;
 }
 
 .panel4 {
     display: inline-block;
     padding: 0 1rem 0 1rem;
+    vertical-align: top;
     text-align: center;
+}
+
+.panel4 h4 {
+    padding: 10px;
+}
+
+.panel4 p {
+    text-decoration: underline;
 }
 
 /* Footer */
@@ -319,10 +372,7 @@ footer ul#menuFooter li {
     padding: 0 0.7em 0 0;
     margin: 0;
 }
-footer ul#menuFooter li {
-    content: "| ";
-    padding-right: 0.7em;
-}
+
 
 footer a, footer a:visited {
     color: white;
@@ -330,13 +380,12 @@ footer a, footer a:visited {
 }
 
 footer a:hover {
-    color: pink;
+    font-weight: 700;
+    color: white;
     text-decoration: underline;
 }
 
 footer #socialLinks {
     position: relative;
     float: right;
-    margin-top: 10px;
-    padding-top: 5px;
 }
