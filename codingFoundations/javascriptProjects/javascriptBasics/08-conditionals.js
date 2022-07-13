@@ -222,6 +222,7 @@ if (FB % 3 === 0 && FB % 5 === 0) {
     console.log(FB)
 }
 
+// Switch
 switch (true) {
     case FB % 5 === 0 && FB % 3 === 0:
         console.log("Fizz Buzz");
@@ -236,4 +237,5 @@ switch (true) {
         console.log(FB);
 }
 
-FB % 3 === 0 && FB % 5 === 0 ? console.log("Fizz Buzz") : FB % 5 === 0 ? console.log("Buzz") : FB % 3 === 0 ? console.log("Fizz") : console.log(FB)
+// Ternary
+FB % 3 === 0 && FB % 5 === 0 ? console.log("Fizz Buzz") : FB % 5 === 0 ? console.log("Buzz") : FB % 3 === 0 ? console.log("Fizz") : console.log(FB);
