@@ -198,3 +198,42 @@ switch (true) {
 
 myAge >= 25 ? console.log("Yay! You can rent a car!") : myAge >= 21 ? console.log("Yay! You can drink!") : myAge >= 18 ? console.log("Yay! You can vote!") : console.log("Sorry, you're too young to do anything fun.")
 
+/*
+    CHALLENGE:
+    Create a variable named FB that takes on a number (it can be any number you want)
+    Print out "Fizz" if the number is divisible by 3
+    Print out "Buzz" if the number is divisible by 5
+    Print out "Fizz Buzz" if the number is divisible by 3 and 5
+    Print out the number if the number isn't divisible by 3 or 5
+
+    EXTRA BROWNIE POINTS:
+    Convert this to a switch statement and then a ternary.
+*/
+
+let FB = 15
+
+if (FB % 3 === 0 && FB % 5 === 0) {
+    console.log("Fizz Buzz")
+} else if (FB % 5 === 0) {
+    console.log("Buzz")
+} else if (FB % 3 === 0) {
+    console.log("Fizz")
+} else {
+    console.log(FB)
+}
+
+switch (true) {
+    case FB % 5 === 0 && FB % 3 === 0:
+        console.log("Fizz Buzz");
+        break;
+    case FB % 5 === 0: 
+        console.log("Buzz");
+        break;
+    case FB % 3 === 0:
+        console.log("Fizz");
+        break;
+    default:
+        console.log(FB);
+}
+
+FB % 3 === 0 && FB % 5 === 0 ? console.log("Fizz Buzz") : FB % 5 === 0 ? console.log("Buzz") : FB % 3 === 0 ? console.log("Fizz") : console.log(FB)
