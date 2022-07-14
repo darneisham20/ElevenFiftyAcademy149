@@ -22,7 +22,7 @@
 */
 
 /*
-    SYTAX:
+    SYNTAX:
 
     if (condition) {
         NESTED LOGIC

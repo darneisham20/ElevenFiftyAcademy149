@@ -9,7 +9,7 @@ hello(); // invokes the function hello.
 /*
     Two things to know up front:
         Parameters are the names listed in the parentheses of the function definition
-        Arguments are the real values recieved by the function when you call it
+        Arguments are the real values received by the function when you call it
 */
 
 // Single Parameter Functions
@@ -48,7 +48,7 @@ console.log(getMyBattingAverage(250, 91)) //OUTPUT: 0.364
 
 // Console.lov vs. Return
 /*
-    console.log: The console.log() method outputs a message to the web console. The message may be a single string (with optional subsitution values), or it may be any one or more JavaScript objects.
+    console.log: The console.log() method outputs a message to the web console. The message may be a single string (with optional substitution values), or it may be any one or more JavaScript objects.
     return: The return statement ends function execution and specifies a value to be returned to the function caller.
 */
 
@@ -69,3 +69,23 @@ function calculatePrice(quantity, price) {
     return totalPrice;
 }
 console.log(calculatePrice(17, 5)); //OUTPUT: 90.95
+
+
+// CLASS NOTES 7.13.22
+
+// Types of Functions
+/*
+    - Function declaration
+    - Function expression
+    - Anonymous functions
+*/
+
+// Function Declaration - are hoisted (available anywhere within the program)
+function declaration() {
+    console.log("This is the function body!")
+}
+
+// Function Expressions - are NOT hoisted after creation (stored within a variable)
+let expression = function() { // <- "anonymous" function
+    console.log("this is a function expression!")
+}
