@@ -4,22 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Recap</title>
+    <title>Working with the DOM</title>
 </head>
 
 <body>
     <div id="container">
         <form id="form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name...">
+            <label for="age">Please enter your age (1 - 100): </label>
+            <input type="number" id="age" name="age" min="1" max="100">
             <input onclick="doSomething();" type="button" value="Click me!">
         </form>
     </div>
 </body>
 
-<script>
-    const doSomething = () => {
-        count++
-        alert("What's up doc? Your count is ${count}")
-    }
-</script>
+<script src="script.js"></script>
 
 </html>
+
+
+<!-- Use your google skills to research different types of input tags, and find a way to incorporate the "value" into our current "doSomething()" function -->
+
