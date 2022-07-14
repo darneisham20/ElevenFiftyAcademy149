@@ -42,8 +42,23 @@ function calc (num1, num2, num3) {
     return avg
 }
 
-calc(1, 2, 3)
+calc(1, 2, 3) // <- These results will not show anywhere, you need to actually store it within a variable for the code to run it. Otherwise it'll "skip" over this portion of the code.
 
 let avgNum = calc(153, 23042, 249)
 
 console.log(`Average: ${avgNum}`)
+
+/*
+CHALLENGE
+
+- Write a function that accepts name and grade as parameters, and then
+
+prints "NAME got a GRADE in social studies" to the console.
+
+*/
+
+function school(name, grade) {
+    console.log(`${name} got a ${grade} in social studies.`)
+}
+
+school("Neisha", "B")
