@@ -8,19 +8,28 @@
 </head>
 
 <body>
+    <form id="form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name...">
+
+        <label for="savings">Please enter your savings (1 - 1000000): </label>
+        <input type="number" id="savings" name="savings" min="1" max="100000">
+
+        <label for="age">Please enter your DOB:</label>
+        <input type="date" name="age" id="age">
+
+        <label for=""></label>
+        <input type="date" type="date" name="date">
+
+        <input onclick="doSomething();" type="button" value="Click me!">
+    </form>
+    
     <div id="container">
-        <form id="form">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" placeholder="Enter your name...">
-            <label for="age">Please enter your age (1 - 100): </label>
-            <input type="number" id="age" name="age" min="1" max="100">
-            <input onclick="doSomething();" type="button" value="Click me!">
-        </form>
     </div>
+
+
+    <script src="script.js"></script>
 </body>
-
-<script src="script.js"></script>
-
 </html>
 
 
