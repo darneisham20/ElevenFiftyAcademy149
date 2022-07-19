@@ -9,9 +9,9 @@ const doSomething = () => {
     const name = nameInput.value
     const savings = savingsInput.value
     // Indexing into strings with []
-    const age = Number(date.substring[0,4]) - Number(userDate[0,3])
+    const age = Number(date.substring(0,4)) - Number(userDate.substring(0,4))
 
-    alert(`Whats up ${name}? Your age is ${age}`)
+    makeNewElement(name, age, savings)
     nameInput.value = ""
     savingsInput.value = ""
 }
@@ -28,10 +28,10 @@ const makeNewElement = (name, age, savings) => {
     ageText.textContent = age
     savingsText.textContent = `$ ${savings}.00`
 
-    ageText.style.backgroundColor = "pink"
+    ageText.style.backgroundColor = "red"
     ageText.style.color = "white"
 
-    savingsText.style.color = "purple"
+    savingsText.style.color = "green"
 
     contentWrapper.appendChild(nameHeader)
     contentWrapper.appendChild(ageText)
