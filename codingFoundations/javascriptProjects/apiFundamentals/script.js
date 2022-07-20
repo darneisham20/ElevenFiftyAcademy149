@@ -4,6 +4,8 @@
 const baseURL =  "https://rickandmortyapi.com/api/character"
 const containerDiv = document.getElementById('container')
 
+const searchDiv = document.getElementById('searchContainer')
+
 // Method used by JS to "fetch" information to / from an API and return a PROMISE meaning it will "promise" to return data once "fetching" process has finished
 fetch(baseURL)
     // First need to transform "Fulfilled" promise into JSON (JavaScript Object Notation)
@@ -13,22 +15,57 @@ fetch(baseURL)
         console.log(data.results)
 
         data.results.forEach(character => {
-            const charDiv = document.createElement('div')
-
-            const charPic = document.createElement('img')
-            const charName = document.createElement('h3')
-            const charStatus = document.createElement('p')
-
-            charPic.src = character.image
-            charName.textContent = character.name
-            charStatus.textContent = character.status === "Alive" ? `${character.name} is thriving! B-)` : "This mf is dead or lost."
-
-            // Putting character information inside "charDiv"
-            charDiv.appendChild(charPic)
-            charDiv.appendChild(charName)
-            charDiv.appendChild(charStatus)
-
-            // Putting "charDiv" inside HTML "container" div
-            containerDiv.appendChild(charDiv)
+            makeCharDiv(character.image, character.name, character.origin.name, character.status, containerDiv)
         });
     })
+
+    const getCharResults = () => {
+        const searchInput = document.getElementById("search")
+
+        fetch(`https://rickandmortyapi.com/api/character/?name=${searchInput.value}`)
+            .then(res => res.json())
+            .then(data => {
+                if(data.error) {
+                    const errorMessage = document.createElement("h4")
+
+                    errorMessage.textContent = data.error
+                    errorMessage.style.color = "red"
+
+                    searchDiv.appendChild(errorMessage)
+                } else {
+                    data.results.forEach(char => {
+                        makeCharDiv(char.image, char.name, char.origin.name, char.status, searchDiv)
+                    })
+                }
+
+            })
+            // ".catch()" is used to "catch" any 400/500 errors that may have ocurred during the fetch request
+            // .catch(error => {
+            //     console.log(error)
+            // })
+
+        searchInput.value = ""
+    }
+
+    const makeCharDiv = (image, name, originName, status, divForInfo) => {
+        const charDiv = document.createElement('div')
+
+        const charPic = document.createElement('img')
+        const charName = document.createElement('h3')
+        const charOrigin = document.createElement('p')
+        const charStatus = document.createElement('p')
+
+        charPic.src = image
+        charName.textContent = name
+        charOrigin.textContent = originName
+        charStatus.textContent = status === "Alive" ? `${name} is thriving! B-)` : "This mf is dead or lost."
+
+        // Putting character information inside "charDiv"
+        charDiv.appendChild(charPic)
+        charDiv.appendChild(charName)
+        charDiv.appendChild(charOrigin)
+        charDiv.appendChild(charStatus)
+
+        // Putting "charDiv" inside HTML "container" div
+        divForInfo.appendChild(charDiv)
+    }
